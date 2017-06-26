@@ -1,0 +1,15 @@
+server:
+ port: 8671
+
+spring:
+ application:
+  name: eureka-server
+
+#Below config is to stop the eureka server register itself with eureka.
+#
+eureka:
+ client:
+  registerWithEureka: false
+  fetchRegistry: false
+  server:
+   waitTimeInMsWhenSyncEmpty: 0
